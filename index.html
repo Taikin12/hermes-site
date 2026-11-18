@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes — Google カレンダー連携エージェント</title>
+<meta name="description" content="Hermes は個人用の AI エージェントです。本人の同意に基づいて Google カレンダーを読み書きし、予定の確認や調整を支援します。">
+<link rel="stylesheet" href="vendor/dads/tokens.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">⌘</span>
+      <span class="brand-name">Hermes
+        <span class="brand-sub">Google カレンダー連携エージェント</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <ul>
+        <li><a href="./" aria-current="page">ホーム</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+        <li><a href="terms.html">利用規約</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">HERMES</p>
+    <h1>Google カレンダーをつなぐ、個人用 AI エージェント</h1>
+    <p class="lead">
+      Hermes は、本人が明示的に許可した場合にだけ Google カレンダーへアクセスし、
+      予定の確認・作成・調整を手伝う個人用のツールです。
+      アカウントの作成やログインは必要ありません。
+    </p>
+    <div class="actions">
+      <a class="button" href="privacy.html">プライバシーポリシーを読む</a>
+      <a class="button secondary" href="#how">仕組みを見る</a>
+    </div>
+  </section>
+
+  <section class="card" id="about">
+    <h2>Hermes について</h2>
+    <p>
+      Hermes は、筆者本人が運用している個人向けの AI エージェントです。
+      Google カレンダーに登録された予定を読み取り、必要に応じて予定を作成・更新することで、
+      日程調整やスケジュール管理の手間を減らすことを目的としています。
+    </p>
+    <p>
+      Google アカウントとの接続は Google の OAuth 2.0 による同意画面を通じて行われ、
+      利用者はアクセス範囲を確認したうえで自分で許可・拒否を選べます。
+      許可は Google アカウントの設定画面からいつでも取り消せます。
+    </p>
+  </section>
+
+  <section id="how">
+    <h2>できること</h2>
+    <table>
+      <thead>
+        <tr><th scope="col">機能</th><th scope="col">内容</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>予定の確認</td>
+          <td>指定した期間のカレンダー予定を読み取り、空き時間や予定の一覧を答えます。</td>
+        </tr>
+        <tr>
+          <td>予定の作成・変更</td>
+          <td>依頼に基づいて予定の追加、時刻やタイトルの変更、削除を行います。</td>
+        </tr>
+        <tr>
+          <td>日程の整理</td>
+          <td>複数の予定をまとめ、重複や移動が必要な箇所を提案します。</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="small">
+      Hermes が扱うのは、利用者が許可した Google カレンダーのデータだけです。
+      広告配信や第三者への販売は行いません。
+    </p>
+  </section>
+
+  <section class="card" id="data">
+    <h2>データの取り扱い</h2>
+    <ul>
+      <li>取得する情報: Google アカウントの基本プロフィール（氏名・メールアドレス・プロフィール画像）と、Google カレンダーの予定データ。</li>
+      <li>利用目的: 予定の読み取り・作成・更新という、利用者が依頼した処理の実行のみ。</li>
+      <li>保存: 認証トークンは利用者の端末（ローカル環境）にのみ保存します。</li>
+      <li>第三者提供: 行いません。Google API の限定使用（Limited Use）要件を遵守します。</li>
+    </ul>
+    <p>
+      詳しくは <a href="privacy.html">プライバシーポリシー</a> をご確認ください。
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>
+      Hermes および本サイトに関するお問い合わせ、データの削除依頼は
+      <a href="mailto:taikinkbd@gmail.com">taikinkbd@gmail.com</a> までご連絡ください。
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <ul>
+      <li><a href="./">ホーム</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+      <li><a href="terms.html">利用規約</a></li>
+      <li><a href="mailto:taikinkbd@gmail.com">taikinkbd@gmail.com</a></li>
+    </ul>
+    <p>© 2026 Hermes</p>
+  </div>
+</footer>
+</body>
+</html>
